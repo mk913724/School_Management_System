@@ -1,45 +1,195 @@
+Below is a **complete Test Plan for the “Exam Module”** in a **School Management System (SMS)**.
+This is written in a **professional SQA format** — you can use it directly in your project or GitHub.
 
-Bug Report
-Bug ID: BUG_001
-Title: Error message not displayed for short username
-Severity: Medium
-Priority: High
-Status: Open
+---
 
-Description:
-The error message for usernames shorter than 5 characters is not displaying properly.
+# 📝 **TEST PLAN – EXAM MODULE (School Management System)**
 
-Steps to Reproduce:
+## **1. Introduction**
 
-Open the registration page.
-Enter usr as the username.
-Click Submit.
-Expected Result:
-Error: "Username must be at least 5 characters."
+The Exam Module of the School Management System (SMS) handles exam creation, scheduling, marks entry, grading, result generation, and student report cards.
+This test plan defines the testing scope, objectives, strategy, environment, and responsibilities for validating the Exam Module.
 
-Actual Result:
-No error message displayed.
+---
 
-Assigned To: Dev Team
-Bug Report
-Bug ID: BUG_001
-Title: Error message not displayed for short username
-Severity: Medium
-Priority: High
-Status: Open
+## **2. Objective of Testing**
 
-Description:
-The error message for usernames shorter than 5 characters is not displaying properly.
+* Ensure exams can be created, scheduled, updated, and deleted.
+* Verify question papers or exam structure is created correctly.
+* Validate marks entry, grading logic, and result generation.
+* Ensure students and teachers can view exam routines and results.
+* Check permissions for Admin, Teacher, Student.
+* Ensure correct navigation and UI behavior.
 
-Steps to Reproduce:
+---
 
-Open the registration page.
-Enter usr as the username.
-Click Submit.
-Expected Result:
-Error: "Username must be at least 5 characters."
+## **3. Scope**
 
-Actual Result:
-No error message displayed.
+### **In Scope**
 
-Assigned To: Dev Team
+✔ Exam Creation
+✔ Exam Schedule
+✔ Subject-wise Exam Setup
+✔ Marks Entry (Manual/Bulk Upload)
+✔ Grade Calculation
+✔ Result Generation
+✔ Result Publish (Student Portal)
+✔ Report Card Download
+✔ Notifications (Exam Reminder, Result Publish)
+
+### **Out of Scope**
+
+❌ External integrations (SMS Gateway, Third-Party Result Portal)
+❌ Performance testing beyond basic load checks
+
+---
+
+## **4. Modules to Be Tested**
+
+1. **Create Exam**
+2. **Exam Timetable/Schedule**
+3. **Assign Subjects to Exam**
+4. **Marks Entry**
+5. **Grade Setup**
+6. **Result Calculation**
+7. **Result Publish**
+8. **Student Result View**
+9. **Report Card Download (PDF)**
+10. **Teacher Result View**
+
+---
+
+## **5. Test Strategy**
+
+### **5.1 Testing Types**
+
+* **Functional Testing**
+* **UI/UX Testing**
+* **Validation/Verification**
+* **User Role Permission Testing**
+* **Integration Testing**
+* **Database Testing**
+* **Regression Testing**
+* **Negative Testing**
+* **Usability Testing**
+
+---
+
+## **6. Test Environment**
+
+* **Environment:** QA/Test Server
+* **Database:** MySQL/PostgreSQL
+* **Browser:** Chrome, Firefox, Edge
+* **Tools:**
+
+  * Test case sheet (Excel / Google Sheet)
+  * Bug reporting tool (Jira, Trello, GitHub Issues)
+
+---
+
+## **7. Test Deliverables**
+
+* Test Plan
+* Test Scenarios
+* Test Cases
+* Test Execution Report
+* Bug Report
+* Final Summary Report
+
+---
+
+## **8. Risks**
+
+### **Possible Risks**
+
+* Wrong grade calculation logic
+* Incorrect marks mapping
+* Exam collision in schedule
+* Permission issues (Student sees Teacher pages)
+* Result publish delay
+
+### **Mitigation**
+
+* Early validation of logic
+* Regression on each update
+* Strong database constraints
+
+---
+
+## **9. Entry Criteria**
+
+* Exam module UI should be ready
+* API/backend integration completed
+* Test environment deployed
+* Functional requirements available
+
+---
+
+## **10. Exit Criteria**
+
+* All major features tested
+* No critical or high-priority bugs
+* Passed ≥ 95% test cases
+* Sign-off from QA Lead
+
+---
+
+## **11. Test Scenarios (Short List)**
+
+### **A. Exam Creation**
+
+1. Create a new exam with valid info
+2. Try creating an exam with missing fields
+3. Duplicate exam name validation
+4. Edit exam details
+5. Delete exam
+
+### **B. Exam Schedule**
+
+6. Add schedule for each subject
+7. Prevent overlapping schedules
+8. Edit and delete schedule
+
+### **C. Marks Entry**
+
+9. Enter marks for students
+10. Validate marks upper/lower limits
+11. Bulk upload marks (Excel)
+12. Update marks
+
+### **D. Grade Calculation**
+
+13. Verify grade calculation logic
+14. Check GPA calculation
+15. Boundary value testing (0, pass mark, full mark)
+
+### **E. Result Publish**
+
+16. Publish/Unpublish results
+17. Student view of results
+18. Teacher-only access for marks update
+
+### **F. Report Card**
+
+19. Generate per-student report card
+20. Check PDF formatting
+21. Download report card
+
+---
+
+## **12. Approvals**
+
+* **QA Engineer:** …
+* **QA Lead:** …
+* **Project Manager:** …
+
+---
+
+If you want, I can also generate:
+
+✅ **Test Cases (Excel Format)**
+✅ **Bug Report Format**
+✅ **Detailed Test Scenarios**
+✅ **Flow Diagram for Exam Module**
+
+Just tell me!
