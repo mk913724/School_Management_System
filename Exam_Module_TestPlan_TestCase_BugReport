@@ -1,1 +1,45 @@
 
+Bug Report
+Bug ID: BUG_001
+Title: Error message not displayed for short username
+Severity: Medium
+Priority: High
+Status: Open
+
+Description:
+The error message for usernames shorter than 5 characters is not displaying properly.
+
+Steps to Reproduce:
+
+Open the registration page.
+Enter usr as the username.
+Click Submit.
+Expected Result:
+Error: "Username must be at least 5 characters."
+
+Actual Result:
+No error message displayed.
+
+Assigned To: Dev Team
+Bug Report
+Bug ID: BUG_001
+Title: Error message not displayed for short username
+Severity: Medium
+Priority: High
+Status: Open
+
+Description:
+The error message for usernames shorter than 5 characters is not displaying properly.
+
+Steps to Reproduce:
+
+Open the registration page.
+Enter usr as the username.
+Click Submit.
+Expected Result:
+Error: "Username must be at least 5 characters."
+
+Actual Result:
+No error message displayed.
+
+Assigned To: Dev Team
