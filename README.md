@@ -27,3 +27,16 @@ Enhance the Country Dropdown functionality to preserve the selected value upon r
 | MK-03 | Enter negative marks          | —                            | Enter -5                           | -5            | Show error: “Invalid marks”            |
 | MK-04 | Bulk upload marks             | Excel upload                 | Upload valid file                  | Excel file    | Marks imported                         |
 | MK-05 | Bulk upload with wrong format | Wrong columns                | Upload invalid file                | Wrong Excel   | System shows format error              |
+
+
+
+
+hjbjk
+| TC ID | Test Case Description                  | Pre-Condition           | Test Steps                                                     | Test Data                | Expected Result                               | Status  |
+| ----- | -------------------------------------- | ----------------------- | -------------------------------------------------------------- | ------------------------ | --------------------------------------------- | ------- |
+| EX-01 | Verify exam creation with valid data   | User logged in as Admin | 1. Go to Exam Module → Create Exam 2. Enter valid data 3. Save | Exam: “Half Yearly 2025” | Exam should be created successfully           | Pending |
+| EX-02 | Verify validation for empty exam name  | Admin logged in         | 1. Create Exam 2. Keep name empty 3. Save                      | Name: ""                 | System should show error "Exam name required" | Pending |
+| EX-03 | Verify duplicate exam name not allowed | Existing exam present   | 1. Create Exam with same name 2. Save                          | Name: “Mid Term 2025”    | System should show "Exam already exists"      | Pending |
+| EX-04 | Verify edit exam details               | Exam already created    | 1. Select exam 2. Edit details 3. Save                         | Change: “Session 2025”   | Exam should update successfully               | Pending |
+| EX-05 | Verify delete exam                     | Exam present            | 1. Click delete option 2. Confirm                              | —                        | Exam should be deleted                        | Pending |
+
