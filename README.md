@@ -46,4 +46,11 @@ hjbjk
 | EX-02 | Verify validation for empty exam name  | Admin logged in         | 1. Create Exam 2. Keep name empty 3. Save                      | Name: ""                 | System should show error "Exam name required" | Pending | Required field validation   | QA Tester 1 |
 | EX-03 | Verify duplicate exam name not allowed | Existing exam present   | 1. Create Exam with same name 2. Save                          | Name: “Mid Term 2025”    | System should show "Exam already exists"      | Pending | Check unique constraint     | QA Tester 2 |
 | EX-04 | Verify edit exam details               | Exam already created    | 1. Select exam 2. Edit details 3. Save                         | Change: “Session 2025”   | Exam should update successfully               | Pending | Ensure DB updates correctly | QA Tester 2 |
-| EX-05 | Verify delete exam                     | Exam present            | 1. Click delete option 2. Confirm                              | —                        | Exam should be deleted                        | Pending | Confirm delete warning      | QA Tester 3 |
+| EX-05 | Verify delete exam                     | Exam present            | 1. Click delete option 2. Confirm                              | —                        | Exam should be deleted 
+
+
+
+hbkj
+
+
+| Pending | Confirm delete warning      | QA Tester 3 |
