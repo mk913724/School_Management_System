@@ -20,3 +20,10 @@ Correct backend logic to reject usernames exceeding 15 characters.
 Ensure the Terms and Conditions checkbox remains editable after form submission.
 Enhance the Country Dropdown functionality to preserve the selected value upon resubmission.
 [Test_Case_Documents.pdf](https://github.com/user-attachments/files/23822291/Test_Case_Documents.pdf)
+| TC ID | Description                   | Pre-Condition                | Steps                              | Test Data     | Expected Result                        |
+| ----- | ----------------------------- | ---------------------------- | ---------------------------------- | ------------- | -------------------------------------- |
+| MK-01 | Enter valid marks             | Students & subjects assigned | 1. Open marks entry 2. Enter marks | Student 1: 85 | Marks saved                            |
+| MK-02 | Enter marks above full mark   | Full marks = 100             | Enter 120                          | 120           | Show error: “Cannot exceed full marks” |
+| MK-03 | Enter negative marks          | —                            | Enter -5                           | -5            | Show error: “Invalid marks”            |
+| MK-04 | Bulk upload marks             | Excel upload                 | Upload valid file                  | Excel file    | Marks imported                         |
+| MK-05 | Bulk upload with wrong format | Wrong columns                | Upload invalid file                | Wrong Excel   | System shows format error              |
